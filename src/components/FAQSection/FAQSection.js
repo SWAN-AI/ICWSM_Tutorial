@@ -15,25 +15,34 @@ import rightArrow from "../../assets/icons/arrow_right.svg";
 
 const accordionData = [
   {
-    question: "What kind of support can I expect from instructors?",
+    question: "What is this tutorial about?",
     answer:
-      "Absolutely! You can enroll in multiple tutorial simultaneously and access them at your convenience.",
+      "This tutorial focuses on Knowledge-infused Multimodal Learning. It covers how Knowledge Graphs, Large Language Models, and Vision-Language Models can be combined to build AI systems that are more grounded, interpretable, and context-aware.",
   },
   {
-    question:
-      "Are the tutorial self-paced or do they have specific start and end dates?",
+    question: "Is this tutorial hands-on or lecture-based?",
     answer:
-      "Absolutely! You can enroll in multiple tutorial simultaneously and access them at your convenience.",
+      "The tutorial is primarily hands-on, supported by lecture-style sessions. Participants will also work with guided notebooks and practical pipelines for knowledge graph construction and knowledge infusion into multimodal models.",
   },
   {
-    question: "Are there any prerequisites for the tutorial?",
+    question: "Do I need prior experience with Knowledge Graphs or Vision-Language Models?",
     answer:
-      "Absolutely! You can enroll in multiple tutorial simultaneously and access them at your convenience.",
+      "No prior experience with Knowledge Graphs or Vision-Language Models is required. The tutorial is designed for researchers and practitioners with interests in knowledge representation, reasoning, language understanding, and deep learning.",
   },
   {
-    question: "Can I download the tutorial materials for offline access?",
+    question: "What topics will be covered during the tutorial?",
     answer:
-      "Absolutely! You can enroll in multiple tutorial simultaneously and access them at your convenience.",
+      "The tutorial covers knowledge graph construction with LLMs, retrieval-augmented generation, prompt-based fusion, fine-tuning with external knowledge, and practical approaches for building knowledge-aware multimodal AI systems.",
+  },
+  {
+    question: "What materials will participants receive?",
+    answer:
+      "Participants will receive guided Jupyter notebooks, curated datasets, code templates for retrieval-augmented generation, and step-by-step instructions for prompt-based knowledge infusion and fine-tuning workflows.",
+  },
+  {
+    question: "What should I prepare before attending?",
+    answer:
+      "Participants are encouraged to bring a laptop with Python installed. GPU access is optional but recommended. Installation instructions and datasets will be shared at least two weeks before the event.",
   },
 ];
 
@@ -54,11 +63,11 @@ const FAQSection = () => {
             <h1>Frequently Asked Questions</h1>
             <p className="text-grey-20">
               Still you have any questions? Contact our Team via
-              support@skillbridge.com
+              asaha8@student.gsu.edu
             </p>
-            <Button className="btn bg-white border-white-95 p-3 mt-3 text-black ">
+            {/* <Button className="btn bg-white border-white-95 p-3 mt-3 text-black ">
               See All FAQ’s
-            </Button>
+            </Button> */}
           </Col>
           <Col sm={1}></Col>
           <Col sm={7}>
@@ -74,7 +83,7 @@ const FAQSection = () => {
                   <AccordionBody accordionId={index.toString()}>
                     <hr />
                     <p className="mb-5">{item.answer}</p>
-                    <div className="d-flex justify-content-center align-items-center bg-white-97 border-white-95 p-3 rounded-3">
+                    {/* <div className="d-flex justify-content-center align-items-center bg-white-97 border-white-95 p-3 rounded-3">
                       <h6 className="d-inline">
                         Enrollment Process for Different tutorial
                       </h6>
@@ -83,7 +92,7 @@ const FAQSection = () => {
                         alt=""
                         className="bg-white rounded-5 p-1 ms-auto"
                       />
-                    </div>
+                    </div> */}
                   </AccordionBody>
                 </AccordionItem>
               ))}

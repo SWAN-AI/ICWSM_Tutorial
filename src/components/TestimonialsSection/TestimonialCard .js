@@ -16,9 +16,9 @@ const TestimonialCard = ({ text, author, image }) => {
           alt="testimonial"
         />
         <p className="me-auto mt-2">{author}</p>
-        <Button className="btn bg-white-97 border-white-95 text-black ">
+        {/* <Button className="btn bg-white-97 border-white-95 text-black ">
           Read Full Story
-        </Button>
+        </Button> */}
       </div>
     </Card>
   );

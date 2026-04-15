@@ -4,10 +4,9 @@ import TestimonialCard from "./TestimonialCard ";
 import SectionHeader from "../UI/SectionHeader";
 
 // Assets
-import testimonial1Image from "../../assets/img/testimonials2.png";
-import testimonial2Image from "../../assets/img/testimonials1.png";
-import testimonial3Image from "../../assets/img/testimonials4.png";
-import testimonial4Image from "../../assets/img/testimonials4.png";
+import testimonial1Image from "../../assets/img/trilok.jpg";
+import testimonial2Image from "../../assets/img/agnik.jpeg";
+import testimonial3Image from "../../assets/img/ugur.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
