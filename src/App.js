@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import trilokImage from "./assets/img/trilok.jpg";
+import trilokImage from "./assets/img/trilok.png";
 import agnikImage from "./assets/img/agnik.jpeg";
 import ugurImage from "./assets/img/ugur.jpg";
 
