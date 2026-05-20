@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/ICWSM_Tutorial/static/css/main.64fd5af4.css",
-    "main.js": "/ICWSM_Tutorial/static/js/main.1972ed70.js",
+    "main.css": "/ICWSM_Tutorial/static/css/main.8dc00f8e.css",
+    "main.js": "/ICWSM_Tutorial/static/js/main.178c6e68.js",
     "static/js/453.a935cedd.chunk.js": "/ICWSM_Tutorial/static/js/453.a935cedd.chunk.js",
+    "static/media/tp1.png": "/ICWSM_Tutorial/static/media/tp1.dc9cac147736328cef2c.png",
     "static/media/ugur.jpg": "/ICWSM_Tutorial/static/media/ugur.5e2ffe47c1fda0959576.jpg",
-    "static/media/trilok.jpg": "/ICWSM_Tutorial/static/media/trilok.7db7ba7059caa12df58d.jpg",
+    "static/media/la-bg.jpg": "/ICWSM_Tutorial/static/media/la-bg.7f1b246fb7e4b158ae43.jpg",
     "index.html": "/ICWSM_Tutorial/index.html",
-    "main.64fd5af4.css.map": "/ICWSM_Tutorial/static/css/main.64fd5af4.css.map",
-    "main.1972ed70.js.map": "/ICWSM_Tutorial/static/js/main.1972ed70.js.map",
+    "main.8dc00f8e.css.map": "/ICWSM_Tutorial/static/css/main.8dc00f8e.css.map",
+    "main.178c6e68.js.map": "/ICWSM_Tutorial/static/js/main.178c6e68.js.map",
     "453.a935cedd.chunk.js.map": "/ICWSM_Tutorial/static/js/453.a935cedd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64fd5af4.css",
-    "static/js/main.1972ed70.js"
+    "static/css/main.8dc00f8e.css",
+    "static/js/main.178c6e68.js"
   ]
 }
