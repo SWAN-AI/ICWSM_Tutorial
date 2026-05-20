@@ -120,7 +120,7 @@ function App() {
         >
           <div className="container hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow hero-eyebrow">ICWSM 2026 Tutorial</p>
+              <p className="eyebrow hero-eyebrow">Tutorial</p>
               <p className="conference-line">
                 International AAAI Conference on Web and Social Media · Los Angeles, CA
               </p>
