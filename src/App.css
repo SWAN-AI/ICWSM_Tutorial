@@ -529,16 +529,19 @@ p {
 }
 
 .presenter-image {
-  width: 112px;
-  height: 112px;
-  margin-bottom: 20px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 24px;
+  border-radius: 18px;
   object-fit: cover;
   object-position: center;
-  border: 4px solid #ffffff;
-  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.14);
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
 }
 
+.presenter-card:first-child .presenter-image {
+  object-position: center top;
+}
 @media (max-width: 980px) {
   .topbar {
     align-items: flex-start;
@@ -761,3 +764,29 @@ p {
     font-size: 0.9rem;
   }
 }
+
+.lead-presenter {
+  border: 2px solid var(--primary);
+  transform: translateY(-10px);
+  box-shadow: 0 24px 60px rgba(29, 78, 216, 0.16);
+}
+
+.lead-presenter .presenter-image {
+  width: 144px;
+  height: 144px;
+}
+
+.lead-presenter h3::after {
+  content: "Lead Organizer";
+  display: block;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: #ffffff;
+  background: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+

@@ -64,6 +64,13 @@ const readings = [
 
 const presenters = [
   {
+    name: "Ugur Kursuncu",
+    role: "Assistant Professor, Georgia State University",
+    image: ugurImage,
+    bio:
+      "Leads the SWAN AI Research Group. His research focuses on context-aware and knowledge-infused learning systems across cyber social threats, business, and health informatics.",
+  },
+  {
     name: "Trilok Padhi",
     role: "Ph.D. Student, Georgia State University",
     image: trilokImage,
@@ -76,13 +83,6 @@ const presenters = [
     image: agnikImage,
     bio:
       "Researches generative AI through knowledge representation, with applications in health and marketing.",
-  },
-  {
-    name: "Ugur Kursuncu",
-    role: "Assistant Professor, Georgia State University",
-    image: ugurImage,
-    bio:
-      "Leads the SWAN AI Research Group. His research focuses on context-aware and knowledge-infused learning systems across cyber social threats, business, and health informatics.",
   },
 ];
 
@@ -311,7 +311,6 @@ function App() {
               <p className="eyebrow">Presenters</p>
               <h2>Tutorial organizers</h2>
             </div>
-
             <div className="presenter-grid">
               {presenters.map((person) => (
                 <article className="presenter-card" key={person.name}>
