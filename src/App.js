@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
-import trilokImage from "./assets/img/trilok.jpg";
+import trilokImage from "./assets/img/tp1.png";
 import agnikImage from "./assets/img/agnik.jpeg";
 import ugurImage from "./assets/img/ugur.jpg";
+import laBg from "./assets/img/la-bg.jpg";
 
 const schedule = [
   {
@@ -105,12 +106,24 @@ function App() {
       </header>
 
       <main>
-        <section id="home" className="hero">
-          <div className="hero-bg" />
-
+        <section
+          id="home"
+          className="hero hero-with-bg"
+          style={{
+            backgroundImage: `linear-gradient(
+              90deg,
+              rgba(2, 6, 23, 0.88) 0%,
+              rgba(15, 23, 42, 0.76) 48%,
+              rgba(15, 23, 42, 0.45) 100%
+            ), url(${laBg})`,
+          }}
+        >
           <div className="container hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow">ICWSM 2026 Tutorial</p>
+              <p className="eyebrow hero-eyebrow">ICWSM 2026 Tutorial</p>
+              <p className="conference-line">
+                International AAAI Conference on Web and Social Media · Los Angeles, CA
+              </p>
               <h1>Knowledge-Infused Multimodal Learning</h1>
               <p className="hero-subtitle">
                 Building reliable, interpretable, and context-aware multimodal

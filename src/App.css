@@ -600,3 +600,160 @@ p {
     font-size: 0.88rem;
   }
 }
+
+/* =========================
+   Improved ICWSM Hero Section
+   ========================= */
+
+.hero-with-bg {
+  position: relative;
+  min-height: 680px;
+  padding: 118px 0 104px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero-with-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(59, 130, 246, 0.3), transparent 34%),
+    linear-gradient(180deg, rgba(2, 6, 23, 0.08), rgba(2, 6, 23, 0.32));
+  pointer-events: none;
+}
+
+.hero-with-bg .hero-grid {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-with-bg .hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 16px;
+  padding: 13px 20px;
+  border-radius: 999px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(14px);
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.conference-line {
+  margin: 0 0 22px;
+  color: #bfdbfe;
+  font-size: 1.22rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+
+.hero-with-bg h1 {
+  max-width: 860px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(3.8rem, 8vw, 7rem);
+  line-height: 0.94;
+  letter-spacing: -0.08em;
+  text-shadow: 0 18px 48px rgba(0, 0, 0, 0.36);
+}
+
+.hero-with-bg .hero-subtitle {
+  max-width: 780px;
+  margin: 30px 0 0;
+  color: #e5edf9;
+  font-size: 1.35rem;
+  line-height: 1.65;
+  text-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
+}
+
+.hero-with-bg .hero-card {
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 24px 70px rgba(2, 6, 23, 0.3);
+  backdrop-filter: blur(20px);
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.brand-mark {
+  min-width: 76px;
+  height: 44px;
+  padding: 0 16px;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.nav {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media (max-width: 980px) {
+  .hero-with-bg {
+    min-height: auto;
+    padding: 86px 0 76px;
+  }
+
+  .hero-with-bg h1 {
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .hero-with-bg .hero-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .conference-line {
+    font-size: 1.05rem;
+  }
+
+  .hero-with-bg .hero-eyebrow {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-with-bg {
+    padding: 72px 0 62px;
+  }
+
+  .hero-with-bg h1 {
+    font-size: 3rem;
+    letter-spacing: -0.06em;
+  }
+
+  .hero-with-bg .hero-subtitle {
+    font-size: 1.02rem;
+  }
+
+  .hero-with-bg .hero-eyebrow {
+    font-size: 0.84rem;
+    padding: 10px 14px;
+  }
+
+  .conference-line {
+    font-size: 0.95rem;
+  }
+
+  .brand {
+    font-size: 1.05rem;
+    white-space: normal;
+  }
+
+  .brand-mark {
+    min-width: 66px;
+    height: 38px;
+    font-size: 0.9rem;
+  }
+}
